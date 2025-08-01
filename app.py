@@ -29,9 +29,9 @@ def main():
     hel=st.text_input('enter the expenditure on heath in terms % of GDP')
     ch_m=st.text_input('enter the number of deaths for 1000 births for lessthan 5 years')
     fer=st.text_input('enter the average children born to a women in a country')
-    if=st.text_input('enter the average life expectency in a country')
+    lf=st.text_input('enter the average life expectency in a country')
 
-    in_data=[ch_m,exp,hel,imp,inc,if,fer,gdp]
+    in_data=[ch_m,exp,hel,imp,inc,lf,fer,gdp]
 
     if st.button('predict'):
         response=prediction(in_data)
