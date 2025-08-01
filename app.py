@@ -19,7 +19,7 @@ def prediction(input_list):
         return 'Developing'
 def main():
     st.title('HELP NGO FOUNDATION')
-    st.subhead('this application will give the status of a country based on socio_economic and health')
+    st.subheader('this application will give the status of a country based on socio_economic and health')
     gdp=st.text_input('enter the GDP per population of a country')
     inc=st.text_input('enter the per capita income of a country')
     imp=st.text_input('enter the imports in terms of % of GDP')
@@ -36,7 +36,7 @@ def main():
     if st.button('predict'):
         response=prediction(in_data)
         st.success(response)
-if __name__=='__main__':
+if __name__ = '__main__':
     main()
         
 
